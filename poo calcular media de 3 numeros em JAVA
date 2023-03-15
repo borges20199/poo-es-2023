@@ -1,0 +1,30 @@
+//package br.ifpr.aula.construtores;
+import java.util.Scanner;
+
+
+public class App{
+    public static void main(String[]args){
+        Scanner teclado = new Scanner (System.in);
+
+        System.out.println(x: "informe o valor 1: ");
+        int a = teclado.nextInt();
+
+        System.out.println(x: "informe o valor 2: ");
+        int b = teclado.nextInt();
+
+        System.out.println(x: "informe o valor 3: ");
+        int c = teclado.nextInt();
+        double media = media(a,b,c);
+        imprimir(media);
+    }
+    static double media(int a, int b, int c){
+        int soma = a + b + c;
+        double media = soma/3;
+
+        return media;
+    }
+    static void imprimir(double media){
+        System.out.println("Sua media é:"+media);
+
+    }
+}
